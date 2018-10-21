@@ -15,8 +15,6 @@ public class MovingCameraScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (playerTr.position.y < tr.position.y -60) {
-			tr.position -= Vector3.up * 0.5F;
-		}
+		tr.Translate (Vector3.forward * 100);
 	}
 }
