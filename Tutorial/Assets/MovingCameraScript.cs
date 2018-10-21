@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovingCameraScript : MonoBehaviour {
-	private Transform rb;
+	private Transform tr;
+	public GameObject player;
+	private Transform playerTr;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Transform>();
-
-		
+		tr = GetComponent<Transform>();
+		playerTr = player.GetComponent<Transform> ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (rb.position.y > 65) {
-			rb.position -= Vector3.up * 0.1F;
+	void FixedUpdate () {
+		if (playerTr.position.y < tr.position.y -60) {
+			tr.position -= Vector3.up * 0.5F;
 		}
 	}
 }
