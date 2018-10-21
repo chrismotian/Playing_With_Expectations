@@ -54,10 +54,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\EasyGrassSubstance\Example Scene\ObjectRotation.cs" />
+     <Compile Include="Assets\LoseScript2.cs" />
      <Compile Include="Assets\Mezanix\RealisticWoodTextures\0_Demo_Scene\Scripts\SimpleRotate.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\LoseTriggerScript.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Pool Assets\Scripts\RestartController.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\WinTriggerScript.cs" />
      <None Include="Assets\Mezanix\RealisticWoodTextures\0_1_Documentation\Textures_List.txt" />
      <None Include="Assets\EasyGrassSubstance\Documentation.txt" />

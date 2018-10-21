@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class WinTriggerScript : MonoBehaviour {
+	public static WinTriggerScript winner;
+
+	
+	
+	private void Awake()
+	{
+		winner = this;
+	}
 
 	///add your scenename for this script in the Pool scene 
 	///change this comment so the next one will change the script in your scene  
@@ -14,7 +22,10 @@ public class WinTriggerScript : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Player")) {
 
-				SceneManager.LoadScene (NextScene);
+			win ();
 		}
+	}
+	public void win(){
+		SceneManager.LoadScene (NextScene);
 	}
 }
