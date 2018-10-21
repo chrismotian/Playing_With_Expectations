@@ -56,18 +56,20 @@
      <Compile Include="Assets\Pool Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\LoseTriggerScript.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Pool Assets\Scripts\Plug.cs" />
+     <Compile Include="Assets\Pool Assets\Scripts\PlugButton.cs" />
      <Compile Include="Assets\Pool Assets\Scripts\WinTriggerScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>/Users/bjarke/code/personal/projects/playingWithExpectations/Tutorial/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>/Users/bjarke/code/personal/projects/unity-playing-with-expectations/Tutorial/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/bjarke/code/personal/projects/playingWithExpectations/Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/bjarke/code/personal/projects/unity-playing-with-expectations/Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/bjarke/code/personal/projects/playingWithExpectations/Tutorial/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/bjarke/code/personal/projects/unity-playing-with-expectations/Tutorial/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/bjarke/code/personal/projects/playingWithExpectations/Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/bjarke/code/personal/projects/unity-playing-with-expectations/Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

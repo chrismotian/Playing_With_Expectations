@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 
     float GetJumpMovement() {
         // If player can't jump or is already in the air or is already jumping, we return 0 (no more jump force added).
-        if (!canJump || inAir) {
+        if (!canJump/* || inAir */) {
             return 0;
         }
 
@@ -68,6 +68,16 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (inAir) {
             inAir = false;
+        }
+
+        // Check if we hit the plug button.
+        PlugButton button = collision.gameObject.GetComponent<PlugButton>();
+        if (button != null) {
+            Debug.Log("Player.OnCollisionEnter (PlugButton hit): velocity=" + rb.velocity + ", gameObject=" + collision.gameObject);
+            // Only activate button if player was on the way down, i.e. velocity.y is negative. We compare with -0.1f to make sure player is moving in y direction.
+            if (rb.velocity.y <= -0.1f) {
+                button.Activate();
+            }
         }
     }
 
